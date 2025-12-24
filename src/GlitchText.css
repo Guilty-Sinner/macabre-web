@@ -13,6 +13,14 @@
     line-height: 1;
 }
 
+@media (max-width: 768px) {
+    .glitch {
+        white-space: normal;
+        word-break: break-word;
+        text-align: center;
+    }
+}
+
 .glitch::after,
 .glitch::before {
     content: attr(data-text);

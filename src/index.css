@@ -166,3 +166,62 @@ input[type=number]::-webkit-outer-spin-button {
         text-shadow: 0 0 5px #300;
     }
 }
+
+@keyframes rapid-flicker {
+
+    0%,
+    100% {
+        opacity: 1;
+        filter: contrast(120%) brightness(100%) grayscale(100%);
+    }
+
+    5% {
+        opacity: 0.1;
+        filter: contrast(300%) brightness(300%) grayscale(100%);
+    }
+
+    15% {
+        opacity: 0.9;
+        filter: contrast(100%) brightness(80%) grayscale(100%);
+    }
+
+    25% {
+        opacity: 0.1;
+        filter: contrast(250%) brightness(200%) grayscale(100%);
+    }
+
+    35% {
+        opacity: 1;
+        filter: contrast(120%) brightness(100%) grayscale(100%);
+    }
+
+    45% {
+        opacity: 0.2;
+        filter: contrast(400%) brightness(250%) grayscale(100%);
+    }
+
+    55% {
+        opacity: 0.9;
+        filter: contrast(100%) brightness(90%) grayscale(100%);
+    }
+
+    65% {
+        opacity: 0.1;
+        filter: contrast(350%) brightness(300%) grayscale(100%);
+    }
+
+    75% {
+        opacity: 1;
+        filter: contrast(120%) brightness(100%) grayscale(100%);
+    }
+
+    85% {
+        opacity: 0.3;
+        filter: contrast(200%) brightness(150%) grayscale(100%);
+    }
+
+    95% {
+        opacity: 0;
+        filter: contrast(500%) brightness(400%) grayscale(100%);
+    }
+}
