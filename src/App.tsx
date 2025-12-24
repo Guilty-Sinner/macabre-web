@@ -80,7 +80,7 @@ function App() {
     };
 
     const promptStyle = {
-        fontFamily: "'IBM Plex Mono', monospace",
+        fontFamily: "'MatterOfFact', monospace",
         fontSize: '1.5rem',
         color: '#ffffff',
         textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
@@ -119,7 +119,7 @@ function App() {
                 />
             </div>
 
-            <div className="container center-stage" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10, textAlign: 'center', width: '800px' }}>
+            <div className="container center-stage" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10, textAlign: 'center', width: '90%', maxWidth: '900px' }}>
                 <AnimatePresence mode="wait">
                     {step === 0 && (
                         <motion.div
@@ -129,12 +129,12 @@ function App() {
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', height: '100px' }}>
-                                <div style={{ position: 'absolute', zIndex: 1, opacity: 0.8 }}>
+                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                                <div style={{ position: 'relative', zIndex: 1, opacity: 0.8 }}>
                                     <GlitchText speed={0.2} enableShadows={true}>WHAT IS YOUR DEED?</GlitchText>
                                 </div>
-                                <div style={{ position: 'absolute', zIndex: 2, opacity: 0.8, pointerEvents: 'none' }}>
-                                    <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT IS YOUR DEED?</FuzzyText>
+                                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 2, opacity: 0.8, pointerEvents: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <FuzzyText fontSize="clamp(1.2rem, 6vw, 3.5rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT IS YOUR DEED?</FuzzyText>
                                 </div>
                             </div>
                             <input
@@ -157,12 +157,12 @@ function App() {
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', height: '100px' }}>
-                                <div style={{ position: 'absolute', zIndex: 1, opacity: 0.8 }}>
+                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                                <div style={{ position: 'relative', zIndex: 1, opacity: 0.8 }}>
                                     <GlitchText speed={0.2} enableShadows={true}>WHAT DO YOU DESIRE?</GlitchText>
                                 </div>
-                                <div style={{ position: 'absolute', zIndex: 2, opacity: 0.8, pointerEvents: 'none' }}>
-                                    <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT DO YOU DESIRE?</FuzzyText>
+                                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 2, opacity: 0.8, pointerEvents: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <FuzzyText fontSize="clamp(1.2rem, 6vw, 3.5rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT DO YOU DESIRE?</FuzzyText>
                                 </div>
                             </div>
                             <input
@@ -185,12 +185,12 @@ function App() {
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', height: '100px' }}>
-                                <div style={{ position: 'absolute', zIndex: 1, opacity: 0.8 }}>
+                            <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                                <div style={{ position: 'relative', zIndex: 1, opacity: 0.8 }}>
                                     <GlitchText speed={0.2} enableShadows={true}>WHAT DO YOU DESIRE OF?</GlitchText>
                                 </div>
-                                <div style={{ position: 'absolute', zIndex: 2, opacity: 0.8, pointerEvents: 'none' }}>
-                                    <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT DO YOU DESIRE OF?</FuzzyText>
+                                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 2, opacity: 0.8, pointerEvents: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <FuzzyText fontSize="clamp(1.2rem, 6vw, 3.5rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>WHAT DO YOU DESIRE OF?</FuzzyText>
                                 </div>
                             </div>
                             <input
@@ -212,12 +212,12 @@ function App() {
                             animate={{ opacity: 1 }}
                         >
                             {loading ? (
-                                <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', height: '100px' }}>
-                                    <div style={{ position: 'absolute', zIndex: 1, opacity: 0.8 }}>
+                                <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                                    <div style={{ position: 'relative', zIndex: 1, opacity: 0.8 }}>
                                         <GlitchText speed={0.2} enableShadows={true} className="loading-glitch">COMMUNING...</GlitchText>
                                     </div>
-                                    <div style={{ position: 'absolute', zIndex: 2, opacity: 0.8, pointerEvents: 'none' }}>
-                                        <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>COMMUNING...</FuzzyText>
+                                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 2, opacity: 0.8, pointerEvents: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                        <FuzzyText fontSize="clamp(1.2rem, 6vw, 3.5rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>COMMUNING...</FuzzyText>
                                     </div>
                                 </div>
                             ) : (
