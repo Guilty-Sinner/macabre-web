@@ -120,6 +120,20 @@ function App() {
             </div>
 
             <div className="container center-stage" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 10, textAlign: 'center', width: '90%', maxWidth: '900px' }}>
+                <div style={{ marginBottom: '30px' }}>
+                    <img
+                        src="/macabre_logo.jpg"
+                        alt="Macabre Logo"
+                        style={{
+                            width: '200px',
+                            maxWidth: '80%',
+                            height: 'auto',
+                            filter: 'grayscale(100%) contrast(120%) brightness(80%)',
+                            opacity: 0.7,
+                            animation: 'flicker 10s infinite alternate'
+                        }}
+                    />
+                </div>
                 <AnimatePresence mode="wait">
                     {step === 0 && (
                         <motion.div
