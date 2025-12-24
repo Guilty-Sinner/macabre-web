@@ -1,0 +1,10 @@
+.noise-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 5;
+    /* Ensure it's above the background but maybe below interactive elements if needed, though pointer-events: none handles interaction */
+}

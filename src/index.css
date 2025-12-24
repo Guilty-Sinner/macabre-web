@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Roboto+Mono:wght@100;300;400;700&family=IBM+Plex+Mono:ital,wght@0,500;0,900;1,500;1,900&display=swap');
+
+@font-face {
+    font-family: 'MatterOfFact';
+    src: url('/fonts/MatterOfFact.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #000000;
+    --text-color: #555;
+    --accent-color: #600;
+    --input-focus: #a00;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    /* No scrollbars for the mystery feel */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.center-stage {
+    /* Styles handled inline in App.tsx */
+}
+
+.minimal-header {
+    position: absolute;
+    top: 2rem;
+    opacity: 0.3;
+}
+
+.glitch-text-small {
+    font-family: 'Nosifer', cursive;
+    font-size: 1rem;
+    color: #333;
+    letter-spacing: 5px;
+    animation: flicker 8s infinite;
+}
+
+.interaction-zone {
+    width: 100%;
+    max-width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ghost-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #222;
+    color: #aaa;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.ghost-input:focus {
+    border-bottom: 1px solid var(--input-focus);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(100, 0, 0, 0.5);
+}
+
+.ghost-input::placeholder {
+    color: #222;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+/* Hide number spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.loading-text {
+    font-family: 'Nosifer', cursive;
+    font-size: 2rem;
+    color: #400;
+    animation: pulse-red 2s infinite;
+}
+
+.final-revelation {
+    text-align: center;
+    cursor: pointer;
+}
+
+.revelation-text {
+    font-size: 3rem;
+    color: #eee;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+.reset-hint {
+    font-size: 0.8rem;
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.final-revelation:hover .reset-hint {
+    opacity: 1;
+}
+
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 0.3;
+    }
+
+    20%,
+    24%,
+    55% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes pulse-red {
+    0% {
+        text-shadow: 0 0 5px #300;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #f00;
+        color: #800;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #300;
+    }
+}
