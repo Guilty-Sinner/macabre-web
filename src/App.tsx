@@ -217,7 +217,7 @@ function App() {
                                         <GlitchText speed={0.2} enableShadows={true} className="loading-glitch">COMMUNING...</GlitchText>
                                     </div>
                                     <div style={{ position: 'absolute', zIndex: 2, opacity: 0.8, pointerEvents: 'none' }}>
-                                        <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'IBM Plex Mono', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>COMMUNING...</FuzzyText>
+                                        <FuzzyText fontSize="clamp(2rem, 5vw, 4rem)" fontFamily="'MatterOfFact', monospace" color="#fff" enableHover={false} baseIntensity={0.2}>COMMUNING...</FuzzyText>
                                     </div>
                                 </div>
                             ) : (

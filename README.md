@@ -1,33 +1,35 @@
-# Macabre Web Application
+# Macabre
 
-This is the React web application requested, featuring a dark/creepy theme and implementing the string-to-number algorithm.
+A dark, minimalist web application featuring a "blind ritual" string-to-number conversion.
 
-## ⚠️ Prerequisites Missing
+## 🔮 The Experience
 
-It appears that **Node.js** is not installed or configured in your environment. You need Node.js to run React applications.
+- **Minimalist Ritual**: A blind input system where the focus is entirely on the prompts and the atmosphere.
+- **Advanced Text Effects**: Composite Glitch and Fuzzy text rendering using specialized React components and CSS animations.
+- **Atmospheric Visuals**: LetterGlitch background effect paired with a Noise film grain overlay.
+- **Precise Logic**: A complete port of the string-to-number conversion algorithm using `decimal.js` for mathematical accuracy.
 
-## Setup Instructions
+## 🚀 Getting Started
 
-1.  **Install Node.js**
-    *   Download and install the LTS version from [nodejs.org](https://nodejs.org/).
-    *   After installation, restart your terminal/editor to ensure `npm` is available.
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-2.  **Install Dependencies**
-    *   Open your terminal in this directory (`c:\Users\backi\Documents\Macabre\macabre-web`).
-    *   Run the following command:
-        ```bash
-        npm install
-        ```
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-3.  **Run the Application**
-    *   Start the development server with:
-        ```bash
-        npm run dev
-        ```
-    *   Open the URL provided (usually `http://localhost:5173`) in your browser.
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
 
-## Features implemented
+## 🛠️ Tech Stack
 
-*   **Creepy UI**: Dark mode, glitch effects, nosifer font, and animations.
-*   **Algorithm**: Complete port of the Python script using `decimal.js` for high precision arithmetic.
-*   **Modern Tech**: React + TypeScript + Framer Motion + Vite.
+- **Framework**: React + Vite
+- **Language**: TypeScript
+- **Animation**: Framer Motion
+- **Math**: decimal.js
+- **Styling**: Vanilla CSS with custom fonts (Matter Of Fact)

@@ -68,8 +68,6 @@ const FuzzyText: React.FC<FuzzyTextProps> = ({
 
             const actualLeft = metrics.actualBoundingBoxLeft ?? 0;
             const actualRight = metrics.actualBoundingBoxRight ?? metrics.width;
-            const actualAscent = metrics.actualBoundingBoxAscent ?? numericFontSize;
-            const actualDescent = metrics.actualBoundingBoxDescent ?? numericFontSize * 0.2;
 
             const textBoundingWidth = Math.ceil(actualLeft + actualRight);
             // Use numericFontSize for height to match line-height: 1 of HTML
